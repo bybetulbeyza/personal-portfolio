@@ -1,6 +1,6 @@
 import { Github, Linkedin } from 'lucide-react';
 import Window from '../components/Window';
-import profilePic from '../profile_pic.PNG';
+import profilePic from '../profile_pic.png';
 
 export default function Home() {
   return (
