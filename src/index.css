@@ -712,25 +712,48 @@ body {
   color: #c41e3a;
 }
 
-/* ── Taskbar (Bottom Nav) ───────────────────────────────────── */
+/* ── Taskbar (Top Nav) ──────────────────────────────────────── */
 .taskbar {
   position: relative;
   z-index: 100;
   height: 56px;
   background: var(--color-dark);
-  border-top: 3px solid var(--color-border);
+  border-bottom: 3px solid var(--color-border);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 24px;
-  gap: 16px;
   flex-shrink: 0;
 }
 
 .taskbar__nav {
   display: flex;
   gap: 8px;
-  flex: 1;
   align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.taskbar__start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--color-blue);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.taskbar__start:hover {
+  background: #3b82f6;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
 }
 
 .taskbar__btn {
@@ -738,9 +761,9 @@ body {
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.05);
   color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   font-family: 'Inter', sans-serif;
   font-size: 13px;
@@ -751,14 +774,16 @@ body {
 }
 
 .taskbar__btn:hover {
-  border-color: white;
-  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
 }
 
 .taskbar__btn--active {
   background: white;
   color: var(--color-dark);
   border-color: white;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
 }
 
 .taskbar__clock {
@@ -802,6 +827,36 @@ body {
 
   .hero-content h1 {
     font-size: 32px;
+  }
+
+  /* ── Taskbar Mobile Fix ──────────────────────────────────────── */
+  .taskbar {
+    padding: 0 8px;
+    height: 48px;
+    justify-content: space-between;
+  }
+
+  .taskbar__start {
+    width: 32px;
+    height: 32px;
+  }
+
+  .taskbar__nav {
+    position: static;
+    transform: none;
+    flex: 1;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .taskbar__clock {
+    display: none;
+  }
+
+  .taskbar__btn {
+    padding: 6px 8px;
+    font-size: 11px;
+    gap: 4px;
   }
 }
 

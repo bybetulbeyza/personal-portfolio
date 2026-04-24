@@ -27,14 +27,22 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: 'Task Management App',
+    title: 'Healthcare & Patient Data System',
     description:
-      'A modern web application with Kanban boards, priority tagging, deadline reminders, and seamless user authentication.',
-    techs: ['Python', 'FastAPI', 'React', 'PostgreSQL'],
-    icon: '📋',
+      'A desktop-based management system developed in TÜBİTAK project format, focusing on digitalizing healthcare records and team coordination.',
+    techs: ['Python', 'Tkinter', 'Anaconda'],
+    icon: '🏥',
   },
   {
     id: 4,
+    title: 'Desktop Task Widget',
+    description:
+      'A sleek, transparent desktop overlay built to keep daily tasks always in sight. Features a custom UI with high-topmost visibility and a minimalist aesthetic.',
+    techs: ['Python', 'Tkinter', 'Pillow'],
+    icon: '📌',
+  },
+  {
+    id: 5,
     title: 'Telegram Goal Tracker',
     description:
       'A Telegram bot that empowers users to set, track, and achieve personal goals with daily check-ins and progress analytics.',

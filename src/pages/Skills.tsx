@@ -14,12 +14,14 @@ const technicalSkills: Skill[] = [
 ];
 
 const tools = [
-  'Git', 'C', 'C++', 'VS Code', 'PyCharm', 'Jupyter', 'Telegram Bot API',
+  'Git', 'Bash/Terminal', 'Arduino', 'ESP32', 'PlatformIO', 'C', 'C++', 'VS Code', 'PyCharm', 'Jupyter', 'Telegram Bot API',
 ];
 
 const focuses = [
   'Embedded Systems & IoT Development',
   'Hardware-Software Integration',
+  'Microcontroller Interfacing (Arduino/ESP32)',
+  'Smart Automation Systems'
 ];
 
 export default function Skills() {

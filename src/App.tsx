@@ -28,10 +28,10 @@ export default function App() {
   return (
     <div className="desktop">
       <div className="desktop__wallpaper" />
+      <Taskbar activePage={activePage} onNavigate={setActivePage} />
       <main className="desktop__main">
         {renderPage()}
       </main>
-      <Taskbar activePage={activePage} onNavigate={setActivePage} />
     </div>
   );
 }

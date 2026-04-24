@@ -20,7 +20,11 @@ export default function Taskbar({ activePage, onNavigate }: TaskbarProps) {
 
   return (
     <div className="taskbar">
-      <button className="taskbar__start" title="Start">
+      <button 
+        className="taskbar__start" 
+        title="Start"
+        onClick={() => onNavigate('home')}
+      >
         <Monitor size={14} />
       </button>
       <div className="taskbar__nav">
@@ -32,7 +36,7 @@ export default function Taskbar({ activePage, onNavigate }: TaskbarProps) {
             title={item.label}
           >
             {item.icon}
-            <span className="hidden sm:inline">{item.label}</span>
+            <span>{item.label}</span>
           </button>
         ))}
       </div>
