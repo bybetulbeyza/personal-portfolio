@@ -35,6 +35,14 @@ const projects: Project[] = [
   },
   {
     id: 4,
+    title: 'Customer Segmentation for Targeted Marketing',
+    description:
+      'Developed a customer segmentation model using K-Means clustering to identify high-value groups and transform raw purchasing behavior into actionable marketing insights.',
+    techs: ['Python', 'Anaconda', 'Pandas', 'Scikit-Learn'],
+    icon: '📊',
+  },
+  {
+    id: 5,
     title: 'Desktop Task Widget',
     description:
       'A sleek, transparent desktop overlay built to keep daily tasks always in sight. Features a custom UI with high-topmost visibility and a minimalist aesthetic.',
@@ -42,7 +50,7 @@ const projects: Project[] = [
     icon: '📌',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Telegram Goal Tracker',
     description:
       'A Telegram bot that empowers users to set, track, and achieve personal goals with daily check-ins and progress analytics.',
