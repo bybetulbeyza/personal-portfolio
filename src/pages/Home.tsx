@@ -40,7 +40,7 @@ export default function Home() {
                 <Github size={16} />
                 GitHub
               </a>
-              <a href="https:linkedin.com/in/betul-beyza-demirel/" target="_blank" rel="noreferrer" className="social-link">
+              <a href="https://linkedin.com/in/betul-beyza-demirel/" target="_blank" rel="noreferrer" className="social-link">
                 <Linkedin size={16} />
                 LinkedIn
               </a>
