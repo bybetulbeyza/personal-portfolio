@@ -1,8 +1,12 @@
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import Window from '../components/Window';
 import profilePic from '../profile_pic.png';
 
-export default function Home() {
+interface HomeProps {
+  onNavigate: (page: 'home' | 'projects' | 'skills' | 'contact') => void;
+}
+
+export default function Home({ onNavigate }: HomeProps) {
   return (
     <div className="page-layout">
       <Window className="card">
@@ -21,11 +25,17 @@ export default function Home() {
             </p>
 
             <div className="hero-stats">
-              <div className="stat-box">
+              <div 
+                className="stat-box stat-box--clickable"
+                onClick={() => onNavigate('projects')}
+              >
                 <div className="stat-box__number">3+</div>
                 <div className="stat-box__label">Projects</div>
               </div>
-              <div className="stat-box">
+              <div 
+                className="stat-box stat-box--clickable"
+                onClick={() => onNavigate('skills')}
+              >
                 <div className="stat-box__number">5+</div>
                 <div className="stat-box__label">Technologies</div>
               </div>
@@ -44,6 +54,10 @@ export default function Home() {
                 <Linkedin size={16} />
                 LinkedIn
               </a>
+              <button onClick={() => onNavigate('contact')} className="social-link">
+                <Mail size={16} />
+                Contact
+              </button>
             </div>
           </div>
         </div>
