@@ -22,7 +22,7 @@ const projects: Project[] = [
     title: 'Smart Mailbox System (IoT)',
     description:
       'Built a mailbox that’s smarter than your average one! Integrated ESP32 and Arduino to create a real-time monitoring system—because why wait for the mail when your mailbox can just tell you it’s arrived?',
-    techs: ['C', 'Ardunio', 'ESP32'],
+    techs: ['C++', 'Ardunio', 'ESP32'],
     icon: '📮',
   },
   {
