@@ -10,7 +10,6 @@ const technicalSkills: Skill[] = [
   { name: 'Python', level: 90 },
   { name: 'C++', level: 80 },
   { name: 'C', level: 75 },
-  { name: 'SQL', level: 70 },
 ];
 
 const tools = [
